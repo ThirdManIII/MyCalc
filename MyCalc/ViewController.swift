@@ -115,6 +115,15 @@ class ViewController: UIViewController {
         return numberNew
     }
     
+    func destroyItAll() {
+        number1inString = ""
+        number2inString = ""
+        resultInDouble = 0
+        operationIndikator = false
+        currentOperation = nil
+        askAnswerLabel.text = "0"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -203,6 +212,11 @@ class ViewController: UIViewController {
         guard !number2inString.isEmpty else {
             return
         }
+        guard currentOperation != .divide || number2inString != "0" else {
+            destroyItAll()
+            askAnswerLabel.text = "Деление на ноль"
+            return
+        }
         switch currentOperation {
         case .plus:
             operationPlus()
@@ -213,7 +227,7 @@ class ViewController: UIViewController {
         case .divide:
             operationDivide()
         default:
-            askAnswerLabel.text = "Задайте операцию."
+            return
         }
         askAnswerLabel.text = String(resultInDouble)
         number1inString = String(resultInDouble)
@@ -243,12 +257,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func destroyItAllButtonAction(_ sender: UIButton) {
-        number1inString = ""
-        number2inString = ""
-        resultInDouble = 0
-        operationIndikator = false
-        currentOperation = nil
-        askAnswerLabel.text = "0"
+        destroyItAll()
     }
     
     @IBAction func punktButtonAction(_ sender: UIButton) {
