@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     @IBOutlet var multiplButton: UIButton!
     @IBOutlet var divideButton: UIButton!
     @IBOutlet var openSecondViewButton: UIButton!
-    
     var number1inString = ""
     var number2inString = ""
     var labelOutput = ""
@@ -42,42 +41,35 @@ class ViewController: UIViewController {
         case multiplicate = "•"
         case divide = "÷"
     }
-    
     func operationPlus() {
         resultInDouble = Double(number1inString)! + Double(number2inString)!
     }
-    
     func operationMinus() {
         resultInDouble = Double(number1inString)! - Double(number2inString)!
     }
-    
     func operationMultipl() {
         resultInDouble = Double(number1inString)! * Double(number2inString)!
     }
-    
     func operationDivide() {
         resultInDouble = Double(number1inString)! / Double(number2inString)!
     }
-    
     func addNumber(number: String) {
         if operationIndikator != true {
-            number1inString = number1inString + number
+            number1inString += number
             number1inString = deleteFirstZero(number: number1inString)
             printNumberOne()
         } else {
-            number2inString = number2inString + number
+            number2inString += number
             number2inString = deleteFirstZero(number: number2inString)
             printNumberTwo()
         }
     }
-    
     func printCurrentOperation() {
         guard let currentOperation = currentOperation else {
             return
         }
         askAnswerLabel.text = number1inString + currentOperation.rawValue
     }
-    
     func addPoint(number: String) -> String {
         guard !number.contains(".") else {
             return number
@@ -88,13 +80,11 @@ class ViewController: UIViewController {
             return "0."
         }
     }
-    
     func deleteSymbol(operationString: String) -> String {
         var resultString = operationString
         resultString.remove(at: operationString.index(before: operationString.endIndex))
         return resultString
     }
-    
     func printNumberOne() {
         askAnswerLabel.text = number1inString
     }
@@ -104,7 +94,6 @@ class ViewController: UIViewController {
         }
         askAnswerLabel.text = number1inString + currentOperation.rawValue + number2inString
     }
-    
     func deleteFirstZero(number: String) -> String {
         let firstNumber = number[number.startIndex]
         guard firstNumber == "0", !number.contains("."), number.count > 1 else {
@@ -114,7 +103,6 @@ class ViewController: UIViewController {
         numberNew.remove(at: numberNew.startIndex)
         return numberNew
     }
-    
     func destroyItAll() {
         number1inString = ""
         number2inString = ""
@@ -123,7 +111,6 @@ class ViewController: UIViewController {
         currentOperation = nil
         askAnswerLabel.text = "0"
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -132,43 +119,33 @@ class ViewController: UIViewController {
     @IBAction func buttonOneAction(_ sender: UIButton) {
         addNumber(number: "1")
     }
-    
     @IBAction func buttonTwoAction(_ sender: UIButton) {
         addNumber(number: "2")
     }
-    
     @IBAction func buttonThreeAction(_ sender: UIButton) {
         addNumber(number: "3")
     }
-    
     @IBAction func buttonFourAction(_ sender: UIButton) {
         addNumber(number: "4")
     }
-    
     @IBAction func buttonFiveAction(_ sender: Any) {
         addNumber(number: "5")
     }
-    
     @IBAction func buttonSixAction(_ sender: Any) {
         addNumber(number: "6")
     }
-    
     @IBAction func buttonSevenAction(_ sender: Any) {
         addNumber(number: "7")
     }
-    
     @IBAction func buttonEightAction(_ sender: Any) {
         addNumber(number: "8")
     }
-    
     @IBAction func buttonNineAction(_ sender: Any) {
         addNumber(number: "9")
     }
-    
     @IBAction func buttonZeroAction(_ sender: Any) {
         addNumber(number: "0")
     }
-    
     @IBAction func plusButtonAction(_ sender: UIButton) {
         guard !number1inString.isEmpty else {
             return
@@ -177,7 +154,6 @@ class ViewController: UIViewController {
         currentOperation = .plus
         printNumberTwo()
     }
-    
     @IBAction func minusButtonAction(_ sender: Any) {
         if !number1inString.isEmpty {
             operationIndikator = true
@@ -187,9 +163,7 @@ class ViewController: UIViewController {
             number1inString = "-"
             printNumberOne()
         }
-        
     }
-    
     @IBAction func multiplButtonAction(_ sender: Any) {
         guard !number1inString.isEmpty else {
             return
@@ -198,7 +172,6 @@ class ViewController: UIViewController {
         currentOperation = .multiplicate
         printNumberTwo()
     }
-    
     @IBAction func divideButtonAction(_ sender: Any) {
         guard !number1inString.isEmpty else {
             return
@@ -207,7 +180,6 @@ class ViewController: UIViewController {
         currentOperation = .divide
         printNumberTwo()
     }
-    
     @IBAction func equalButtonAction(_ sender: UIButton) {
         guard !number2inString.isEmpty else {
             return
@@ -233,7 +205,6 @@ class ViewController: UIViewController {
         number1inString = String(resultInDouble)
         number2inString = ""
     }
-    
     @IBAction func deleteButtonAction(_ sender: UIButton) {
         guard !number1inString.isEmpty else {
             return
@@ -255,11 +226,9 @@ class ViewController: UIViewController {
             printNumberTwo()
         }
     }
-    
     @IBAction func destroyItAllButtonAction(_ sender: UIButton) {
         destroyItAll()
     }
-    
     @IBAction func punktButtonAction(_ sender: UIButton) {
         if operationIndikator != true {
             number1inString = addPoint(number: number1inString)
@@ -269,9 +238,12 @@ class ViewController: UIViewController {
             printNumberTwo()
         }
     }
-    
     @IBAction func openSVCButtonAction(_ sender: UIButton) {
-        let newView = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewControllerID") as! SecondViewController
+        guard let newView = self.storyboard?.instantiateViewController(
+            withIdentifier: "SecondViewControllerID"
+        ) as? SecondViewController else {
+            return
+        }
         newView.result = String(resultInDouble)
         self.navigationController?.pushViewController(newView, animated: true)
     }
