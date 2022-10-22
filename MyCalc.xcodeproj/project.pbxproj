@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D68221C5273E9B1C00FDD077 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68221C4273E9B1C00FDD077 /* SecondViewController.swift */; };
+		D68C115A2903CE3C006B99B7 /* MyCalcTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C11592903CE3C006B99B7 /* MyCalcTitleView.swift */; };
+		D68C115F2903E370006B99B7 /* MyCalcNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C115D2903E370006B99B7 /* MyCalcNavigationController.swift */; };
+		D68C11602903E370006B99B7 /* MyCalcNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68C115E2903E370006B99B7 /* MyCalcNavigationController.xib */; };
 		D6B5BA0F2723EBDF009AFDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5BA0E2723EBDF009AFDD0 /* AppDelegate.swift */; };
 		D6B5BA112723EBDF009AFDD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5BA102723EBDF009AFDD0 /* SceneDelegate.swift */; };
 		D6B5BA132723EBDF009AFDD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5BA122723EBDF009AFDD0 /* ViewController.swift */; };
@@ -17,7 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D68221C4273E9B1C00FDD077 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
+		D68221C4273E9B1C00FDD077 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D68C11592903CE3C006B99B7 /* MyCalcTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalcTitleView.swift; sourceTree = "<group>"; };
+		D68C115D2903E370006B99B7 /* MyCalcNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalcNavigationController.swift; sourceTree = "<group>"; };
+		D68C115E2903E370006B99B7 /* MyCalcNavigationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCalcNavigationController.xib; sourceTree = "<group>"; };
 		D6B5BA0B2723EBDF009AFDD0 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B5BA0E2723EBDF009AFDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6B5BA102723EBDF009AFDD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D68C11582903CE17006B99B7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5BA122723EBDF009AFDD0 /* ViewController.swift */,
+				D68C115B2903CE3F006B99B7 /* Subviews */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D68C115B2903CE3F006B99B7 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				D68C11592903CE3C006B99B7 /* MyCalcTitleView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		D68C115C2903E13F006B99B7 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D68221C4273E9B1C00FDD077 /* SecondViewController.swift */,
+			);
+			path = SecondViewController;
+			sourceTree = "<group>";
+		};
+		D68C11612903E377006B99B7 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D68C115D2903E370006B99B7 /* MyCalcNavigationController.swift */,
+				D68C115E2903E370006B99B7 /* MyCalcNavigationController.xib */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 		D6B5BA022723EBDF009AFDD0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +100,9 @@
 			children = (
 				D6B5BA0E2723EBDF009AFDD0 /* AppDelegate.swift */,
 				D6B5BA102723EBDF009AFDD0 /* SceneDelegate.swift */,
-				D6B5BA122723EBDF009AFDD0 /* ViewController.swift */,
-				D68221C4273E9B1C00FDD077 /* SecondViewController.swift */,
+				D68C11612903E377006B99B7 /* NavigationController */,
+				D68C11582903CE17006B99B7 /* ViewController */,
+				D68C115C2903E13F006B99B7 /* SecondViewController */,
 				D6B5BA142723EBDF009AFDD0 /* Main.storyboard */,
 				D6B5BA172723EBE1009AFDD0 /* Assets.xcassets */,
 				D6B5BA192723EBE1009AFDD0 /* LaunchScreen.storyboard */,
@@ -129,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D68C11602903E370006B99B7 /* MyCalcNavigationController.xib in Resources */,
 				D6B5BA1B2723EBE1009AFDD0 /* LaunchScreen.storyboard in Resources */,
 				D6B5BA182723EBE1009AFDD0 /* Assets.xcassets in Resources */,
 				D6B5BA162723EBDF009AFDD0 /* Main.storyboard in Resources */,
@@ -164,8 +206,10 @@
 			files = (
 				D68221C5273E9B1C00FDD077 /* SecondViewController.swift in Sources */,
 				D6B5BA132723EBDF009AFDD0 /* ViewController.swift in Sources */,
+				D68C115F2903E370006B99B7 /* MyCalcNavigationController.swift in Sources */,
 				D6B5BA0F2723EBDF009AFDD0 /* AppDelegate.swift in Sources */,
 				D6B5BA112723EBDF009AFDD0 /* SceneDelegate.swift in Sources */,
+				D68C115A2903CE3C006B99B7 /* MyCalcTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

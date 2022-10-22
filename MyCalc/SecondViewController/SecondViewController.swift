@@ -12,12 +12,16 @@ class SecondViewController: UIViewController {
     @IBOutlet var resultTextLabel: UILabel!
     @IBOutlet var resultOutputLabel: UILabel!
     @IBOutlet var returnButton: UIButton!
+
     var result = ""
+
+	@IBAction func returnButtonAction(_ sender: Any) {
+		self.navigationController?.popViewController(animated: true)
+	}
+
     override func viewDidLoad() {
         super.viewDidLoad()
         resultOutputLabel.text = result
-    }
-    @IBAction func returnButtonAction(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+		returnButton.tintColor = .systemOrange
     }
 }
