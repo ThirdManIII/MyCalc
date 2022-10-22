@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="f5I-Bw-ij7">
-                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <rect key="frame" x="-1" y="44" width="391" height="765"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="370" placeholderIntrinsicHeight="150" translatesAutoresizingMaskIntoConstraints="NO" id="arh-4A-Tzy">
@@ -43,7 +43,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="UGX-8d-SuW" firstAttribute="bottom" secondItem="d69-Jr-Rqf" secondAttribute="top" id="7QK-xf-MAX"/>
                                             <constraint firstAttribute="bottom" secondItem="7Pc-CZ-fZM" secondAttribute="bottom" id="EGh-DL-vzk"/>
@@ -496,9 +496,6 @@
     </scenes>
     <resources>
         <image name="delete.left.fill" catalog="system" width="128" height="102"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
