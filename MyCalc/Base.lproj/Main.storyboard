@@ -25,13 +25,16 @@
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="370" placeholderIntrinsicHeight="150" translatesAutoresizingMaskIntoConstraints="NO" id="arh-4A-Tzy">
                                         <rect key="frame" x="10" y="57" width="370" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="25" placeholderIntrinsicHeight="130" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d69-Jr-Rqf">
-                                                <rect key="frame" x="335" y="10" width="25" height="130"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d69-Jr-Rqf">
+                                                <rect key="frame" x="335" y="96" width="25" height="52"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="0.0" placeholderIntrinsicHeight="0.0" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UGX-8d-SuW">
+                                                <rect key="frame" x="360" y="96" width="0.0" height="0.0"/>
+                                            </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Pc-CZ-fZM">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="150"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,11 +45,13 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="d69-Jr-Rqf" firstAttribute="centerY" secondItem="arh-4A-Tzy" secondAttribute="centerY" id="ALL-zG-5sf"/>
+                                            <constraint firstItem="UGX-8d-SuW" firstAttribute="bottom" secondItem="d69-Jr-Rqf" secondAttribute="top" id="7QK-xf-MAX"/>
                                             <constraint firstAttribute="bottom" secondItem="7Pc-CZ-fZM" secondAttribute="bottom" id="EGh-DL-vzk"/>
-                                            <constraint firstAttribute="trailing" secondItem="d69-Jr-Rqf" secondAttribute="trailing" constant="10" id="NRb-Ka-E2j"/>
+                                            <constraint firstAttribute="trailing" secondItem="d69-Jr-Rqf" secondAttribute="trailing" constant="10" id="Jhn-7e-5Fq"/>
+                                            <constraint firstAttribute="trailing" secondItem="UGX-8d-SuW" secondAttribute="trailing" constant="10" id="MfS-50-WAQ"/>
                                             <constraint firstItem="7Pc-CZ-fZM" firstAttribute="leading" secondItem="arh-4A-Tzy" secondAttribute="leading" id="odk-sd-OD2"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="qeh-kH-tIh"/>
+                                            <constraint firstAttribute="bottom" secondItem="d69-Jr-Rqf" secondAttribute="bottom" constant="2" id="un0-b9-ig9"/>
                                             <constraint firstItem="7Pc-CZ-fZM" firstAttribute="top" secondItem="arh-4A-Tzy" secondAttribute="top" id="vhl-X8-VUc"/>
                                         </constraints>
                                     </view>
@@ -404,6 +409,7 @@
                         <outlet property="openSecondViewButton" destination="YjQ-rK-X9B" id="blT-7A-AcP"/>
                         <outlet property="plusButton" destination="gNz-R2-Qd3" id="2Md-Ho-nEd"/>
                         <outlet property="punktButton" destination="Vg7-WE-bal" id="6LK-12-esh"/>
+                        <outlet property="resultsStackView" destination="UGX-8d-SuW" id="oRM-rw-Wwn"/>
                         <outlet property="view" destination="f5I-Bw-ij7" id="T85-eN-f0H"/>
                     </connections>
                 </viewController>
@@ -419,14 +425,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danke für die Anwendung von MyCalc!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WO-pN-f9i">
-                                <rect key="frame" x="15" y="347" width="360" height="26"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hsm-Wa-4PU">
+                                <rect key="frame" x="15" y="385.66666666666669" width="360" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danke für die Anwendung von MyCalc!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WO-pN-f9i">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultaten von letzten Rechnungen:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-1v-Eql">
+                                        <rect key="frame" x="20" y="26" width="320.33333333333331" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2D-xF-7vb">
-                                <rect key="frame" x="156" y="505.99999999999994" width="78" height="34.333333333333314"/>
+                                <rect key="frame" x="156" y="467.66666666666669" width="78" height="34.333333333333314"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Zurück"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Zurück">
@@ -436,39 +453,22 @@
                                     <action selector="returnButtonAction:" destination="ETL-40-wGW" eventType="touchUpInside" id="S0g-wV-Jn1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Der Resultat von letzter Rechnung:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-1v-Eql">
-                                <rect key="frame" x="39" y="381" width="312" height="26"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQD-ix-keI">
-                                <rect key="frame" x="185.66666666666666" y="437" width="18.666666666666657" height="39"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" systemColor="systemPurpleColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D9Q-Q0-0BR"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2WO-pN-f9i" firstAttribute="top" secondItem="D9Q-Q0-0BR" secondAttribute="top" constant="300" id="03j-Vw-vtd"/>
-                            <constraint firstItem="2WO-pN-f9i" firstAttribute="centerX" secondItem="D9Q-Q0-0BR" secondAttribute="centerX" id="DyD-EM-dfp"/>
-                            <constraint firstItem="FQD-ix-keI" firstAttribute="centerX" secondItem="D9Q-Q0-0BR" secondAttribute="centerX" id="ILa-VA-efz"/>
-                            <constraint firstItem="a2D-xF-7vb" firstAttribute="top" secondItem="FQD-ix-keI" secondAttribute="bottom" constant="30" id="R9A-P5-VDH"/>
-                            <constraint firstItem="TgY-1v-Eql" firstAttribute="centerX" secondItem="D9Q-Q0-0BR" secondAttribute="centerX" id="Vq5-i1-wjG"/>
+                            <constraint firstItem="hsm-Wa-4PU" firstAttribute="centerY" secondItem="D9Q-Q0-0BR" secondAttribute="centerY" constant="-17" id="40Z-xg-40K"/>
+                            <constraint firstItem="a2D-xF-7vb" firstAttribute="top" secondItem="hsm-Wa-4PU" secondAttribute="bottom" constant="30" id="NP7-Ab-qzs"/>
+                            <constraint firstItem="hsm-Wa-4PU" firstAttribute="centerX" secondItem="D9Q-Q0-0BR" secondAttribute="centerX" id="NbA-9H-N4y"/>
                             <constraint firstItem="a2D-xF-7vb" firstAttribute="centerX" secondItem="D9Q-Q0-0BR" secondAttribute="centerX" id="W59-Sg-Rpo"/>
-                            <constraint firstItem="FQD-ix-keI" firstAttribute="top" secondItem="TgY-1v-Eql" secondAttribute="bottom" constant="30" id="dMR-78-MYM"/>
-                            <constraint firstItem="TgY-1v-Eql" firstAttribute="top" secondItem="2WO-pN-f9i" secondAttribute="bottom" constant="8" symbolic="YES" id="pZc-Ip-T3m"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="1X5-vX-sjc"/>
                     <connections>
-                        <outlet property="resultOutputLabel" destination="FQD-ix-keI" id="fjb-Es-jgx"/>
+                        <outlet property="previousCasesStackView" destination="hsm-Wa-4PU" id="a4d-rS-qS0"/>
                         <outlet property="resultTextLabel" destination="TgY-1v-Eql" id="Z8b-hG-4ui"/>
                         <outlet property="returnButton" destination="a2D-xF-7vb" id="vkW-Wf-wcY"/>
                         <outlet property="thanksLabel" destination="2WO-pN-f9i" id="r3d-dd-1K3"/>
-                        <outlet property="view" destination="FQD-ix-keI" id="v9W-LS-Uto"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWq-2L-tsE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -501,9 +501,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

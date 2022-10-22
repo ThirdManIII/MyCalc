@@ -8,12 +8,12 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    @IBOutlet var thanksLabel: UILabel!
-    @IBOutlet var resultTextLabel: UILabel!
-    @IBOutlet var resultOutputLabel: UILabel!
-    @IBOutlet var returnButton: UIButton!
+    @IBOutlet private var thanksLabel: UILabel!
+    @IBOutlet private var resultTextLabel: UILabel!
+	@IBOutlet private var previousCasesStackView: UIStackView!
+	@IBOutlet private var returnButton: UIButton!
 
-    var result = ""
+    private var previousCases = [UILabel]()
 
 	@IBAction func returnButtonAction(_ sender: Any) {
 		self.navigationController?.popViewController(animated: true)
@@ -21,7 +21,13 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultOutputLabel.text = result
-		returnButton.tintColor = .systemOrange
+		previousCases.forEach { label in
+			label.textColor = .systemYellow
+			previousCasesStackView.addArrangedSubview(label)
+		}
     }
+
+	func setPreviousCases(cases: [UILabel]) {
+		previousCases = cases
+	}
 }

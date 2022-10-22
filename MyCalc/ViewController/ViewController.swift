@@ -17,8 +17,10 @@ enum Operation: String {
 final class ViewController: UIViewController {
 	@IBOutlet private var holder: UIView!
 	@IBOutlet private var askAnswerContainerView: UIView!
+	@IBOutlet private var resultsStackView: UIStackView!
 	@IBOutlet private var askAnswerLabel: UILabel!
 	@IBOutlet private var gradientView: UIView!
+
 	@IBOutlet private var destroyItAllButton: UIButton!
 	@IBOutlet private var button1: UIButton!
 	@IBOutlet private var button2: UIButton!
@@ -41,9 +43,11 @@ final class ViewController: UIViewController {
 
 	private enum Constants {
 		static let cornerRadius: CGFloat = 20.0
+		static let prevResultFontSize: CGFloat = 25.0
 		static let secondVCId: String = "SecondViewControllerID"
 		static let zeroDivideText: String = "Деление на ноль"
 		static let navBarTitle: String = "MyCalc"
+		static let fontName: String = "Futura Medium"
 		static let startGradientColor: CGColor = UIColor.white.cgColor
 		static let endGradientColor: CGColor = UIColor.white.withAlphaComponent(0.0).cgColor
 	}
@@ -55,12 +59,22 @@ final class ViewController: UIViewController {
 	private var number2inString = ""
 	private var labelOutput = ""
 	private var resultInFloat: Float = 0
+	private var previousCasesLabels = [UILabel]()
+	private var showedCasesLabels = [UILabel]()
 	private var operationIndikator = false
 	private var currentOperation: Operation?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupSubviews()
+	}
+
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		showedCasesLabels.forEach { label in
+			label.textColor = .black
+			resultsStackView.addArrangedSubview(label)
+		}
 	}
 
 	override func viewDidLayoutSubviews() {
@@ -171,15 +185,16 @@ final class ViewController: UIViewController {
 			return
 		}
 
-		let resultInString = String(resultInFloat)
-		if resultInString.hasSuffix(".0") {
-			askAnswerLabel.text = String(Int(resultInFloat))
-		} else {
-			askAnswerLabel.text = String(resultInFloat)
+		let resultInString = transformedFloatToString(resultInFloat)
+		askAnswerLabel.text = resultInString
+		if let currentOperation = currentOperation {
+			let prevCase = number1inString + currentOperation.rawValue + number2inString + "=" + resultInString
+			rememberAndShowPreviousCase(prevCase)
 		}
 
-		number1inString = String(resultInFloat)
+		number1inString = transformedFloatToString(resultInFloat)
 		number2inString = ""
+		operationIndikator = false
 	}
 
 	@IBAction func deleteButtonAction(_ sender: UIButton) {
@@ -224,7 +239,7 @@ final class ViewController: UIViewController {
 		) as? SecondViewController else {
 			return
 		}
-		newView.result = String(resultInFloat)
+		newView.setPreviousCases(cases: previousCasesLabels)
 		self.navigationController?.pushViewController(newView, animated: true)
 	}
 }
@@ -345,5 +360,30 @@ extension ViewController {
         operationIndikator = false
         currentOperation = nil
         askAnswerLabel.text = "0"
+		showedCasesLabels = []
+		while !resultsStackView.arrangedSubviews.isEmpty {
+			resultsStackView.arrangedSubviews[0].removeFromSuperview()
+		}
     }
+
+	private func rememberAndShowPreviousCase(_ prevCase: String) {
+		let label = UILabel()
+		label.textColor = .black
+		label.font = UIFont(name: Constants.fontName,
+							size: Constants.prevResultFontSize)
+		label.text = prevCase
+
+		resultsStackView.addArrangedSubview(label)
+		previousCasesLabels.append(label)
+		showedCasesLabels.append(label)
+	}
+
+	private func transformedFloatToString(_ value: Float) -> String {
+		let stringValue = String(value)
+		if stringValue.hasSuffix(".0") {
+			return String(Int(value))
+		} else {
+			return stringValue
+		}
+	}
 }
