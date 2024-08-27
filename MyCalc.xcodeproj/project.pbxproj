@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D64F509C2C7661C1000BA434 /* CalculatingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F509B2C7661C1000BA434 /* CalculatingPresenter.swift */; };
+		D64F509F2C766211000BA434 /* CalculatingContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F509E2C766211000BA434 /* CalculatingContracts.swift */; };
+		D64F50A22C766422000BA434 /* CalculatingNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F50A12C766422000BA434 /* CalculatingNumbers.swift */; };
+		D64F50A42C7665A5000BA434 /* CalculatingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F50A32C7665A5000BA434 /* CalculatingOperators.swift */; };
+		D680F5412997A220008CBA90 /* CalculatingCaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680F5402997A220008CBA90 /* CalculatingCaseModel.swift */; };
 		D68221C5273E9B1C00FDD077 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68221C4273E9B1C00FDD077 /* SecondViewController.swift */; };
 		D68C115A2903CE3C006B99B7 /* MyCalcTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C11592903CE3C006B99B7 /* MyCalcTitleView.swift */; };
 		D68C115F2903E370006B99B7 /* MyCalcNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C115D2903E370006B99B7 /* MyCalcNavigationController.swift */; };
 		D68C11602903E370006B99B7 /* MyCalcNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68C115E2903E370006B99B7 /* MyCalcNavigationController.xib */; };
 		D6B5BA0F2723EBDF009AFDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5BA0E2723EBDF009AFDD0 /* AppDelegate.swift */; };
 		D6B5BA112723EBDF009AFDD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5BA102723EBDF009AFDD0 /* SceneDelegate.swift */; };
-		D6B5BA132723EBDF009AFDD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5BA122723EBDF009AFDD0 /* ViewController.swift */; };
+		D6B5BA132723EBDF009AFDD0 /* CalculatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5BA122723EBDF009AFDD0 /* CalculatingViewController.swift */; };
 		D6B5BA162723EBDF009AFDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B5BA142723EBDF009AFDD0 /* Main.storyboard */; };
 		D6B5BA182723EBE1009AFDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B5BA172723EBE1009AFDD0 /* Assets.xcassets */; };
 		D6B5BA1B2723EBE1009AFDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B5BA192723EBE1009AFDD0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D64F509B2C7661C1000BA434 /* CalculatingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingPresenter.swift; sourceTree = "<group>"; };
+		D64F509E2C766211000BA434 /* CalculatingContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingContracts.swift; sourceTree = "<group>"; };
+		D64F50A12C766422000BA434 /* CalculatingNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingNumbers.swift; sourceTree = "<group>"; };
+		D64F50A32C7665A5000BA434 /* CalculatingOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingOperators.swift; sourceTree = "<group>"; };
+		D680F5402997A220008CBA90 /* CalculatingCaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingCaseModel.swift; sourceTree = "<group>"; };
 		D68221C4273E9B1C00FDD077 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D68C11592903CE3C006B99B7 /* MyCalcTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalcTitleView.swift; sourceTree = "<group>"; };
 		D68C115D2903E370006B99B7 /* MyCalcNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalcNavigationController.swift; sourceTree = "<group>"; };
@@ -27,7 +37,7 @@
 		D6B5BA0B2723EBDF009AFDD0 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B5BA0E2723EBDF009AFDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6B5BA102723EBDF009AFDD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6B5BA122723EBDF009AFDD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6B5BA122723EBDF009AFDD0 /* CalculatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingViewController.swift; sourceTree = "<group>"; };
 		D6B5BA152723EBDF009AFDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6B5BA172723EBE1009AFDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6B5BA1A2723EBE1009AFDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,13 +55,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D68C11582903CE17006B99B7 /* ViewController */ = {
+		D64F509A2C766193000BA434 /* CalculatingModule */ = {
 			isa = PBXGroup;
 			children = (
-				D6B5BA122723EBDF009AFDD0 /* ViewController.swift */,
+				D68C11582903CE17006B99B7 /* View */,
+				D64F509D2C7661E1000BA434 /* Presenter */,
+				D64F50A02C766217000BA434 /* Contracts */,
+				D680F5422997A22A008CBA90 /* Models */,
+			);
+			path = CalculatingModule;
+			sourceTree = "<group>";
+		};
+		D64F509D2C7661E1000BA434 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D64F509B2C7661C1000BA434 /* CalculatingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D64F50A02C766217000BA434 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				D64F509E2C766211000BA434 /* CalculatingContracts.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		D680F5422997A22A008CBA90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D680F5402997A220008CBA90 /* CalculatingCaseModel.swift */,
+				D64F50A12C766422000BA434 /* CalculatingNumbers.swift */,
+				D64F50A32C7665A5000BA434 /* CalculatingOperators.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D68C11582903CE17006B99B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5BA122723EBDF009AFDD0 /* CalculatingViewController.swift */,
 				D68C115B2903CE3F006B99B7 /* Subviews */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
 		D68C115B2903CE3F006B99B7 /* Subviews */ = {
@@ -101,7 +148,7 @@
 				D6B5BA0E2723EBDF009AFDD0 /* AppDelegate.swift */,
 				D6B5BA102723EBDF009AFDD0 /* SceneDelegate.swift */,
 				D68C11612903E377006B99B7 /* NavigationController */,
-				D68C11582903CE17006B99B7 /* ViewController */,
+				D64F509A2C766193000BA434 /* CalculatingModule */,
 				D68C115C2903E13F006B99B7 /* SecondViewController */,
 				D6B5BA142723EBDF009AFDD0 /* Main.storyboard */,
 				D6B5BA172723EBE1009AFDD0 /* Assets.xcassets */,
@@ -205,8 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D68221C5273E9B1C00FDD077 /* SecondViewController.swift in Sources */,
-				D6B5BA132723EBDF009AFDD0 /* ViewController.swift in Sources */,
+				D6B5BA132723EBDF009AFDD0 /* CalculatingViewController.swift in Sources */,
+				D64F509C2C7661C1000BA434 /* CalculatingPresenter.swift in Sources */,
+				D680F5412997A220008CBA90 /* CalculatingCaseModel.swift in Sources */,
+				D64F509F2C766211000BA434 /* CalculatingContracts.swift in Sources */,
 				D68C115F2903E370006B99B7 /* MyCalcNavigationController.swift in Sources */,
+				D64F50A22C766422000BA434 /* CalculatingNumbers.swift in Sources */,
+				D64F50A42C7665A5000BA434 /* CalculatingOperators.swift in Sources */,
 				D6B5BA0F2723EBDF009AFDD0 /* AppDelegate.swift in Sources */,
 				D6B5BA112723EBDF009AFDD0 /* SceneDelegate.swift in Sources */,
 				D68C115A2903CE3C006B99B7 /* MyCalcTitleView.swift in Sources */,
