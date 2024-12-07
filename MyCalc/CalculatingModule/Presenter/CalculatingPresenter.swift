@@ -18,7 +18,7 @@ final class CalculatingPresenter {
 	private var numbers: [String] = []
 	private var operators: [CalculatingOperators] = []
 	private var resultInFloat: Float = 0
-	private var operationIndikator = false
+	private var isOperationInput = false
 
 	init(view: CalculatingViewInput) {
 		self.view = view
@@ -38,12 +38,11 @@ extension CalculatingPresenter: CalculatingViewOutput {
 
 	func minusPressed() {
 		if !numbers.isEmpty {
-			operationIndikator = true
-			operators.append(.minus)
+			addOperator(.minus)
 		} else {
 			numbers.append("-")
+			printCase()
 		}
-		printCase()
 	}
 
 	func multiplyPressed() {
@@ -138,7 +137,7 @@ extension CalculatingPresenter: CalculatingViewOutput {
 
 		view.rememberAndShowPreviousCase(caseToShow)
 
-		operationIndikator = false
+		isOperationInput = false
 	}
 
 	func punktPressed() {
@@ -165,7 +164,10 @@ extension CalculatingPresenter {
 		guard !numbers.isEmpty else {
 			return
 		}
-		operationIndikator = true
+		if isOperationInput {
+			operators.removeLast()
+		}
+		isOperationInput = true
 		operators.append(currentOperator)
 		printCase()
 	}
@@ -226,8 +228,9 @@ extension CalculatingPresenter {
 	}
 
 	private func performDeletion() {
-		if numbers.count <= operators.count {
-			view.setAskAnswer(with: "0")
+		if numbers.count == operators.count {
+			operators.removeLast()
+			printCase()
 		} else {
 			numbers[numbers.endIndex - 1] = deleteSymbol(operationString: numbers.last ?? "")
 			view.setAskAnswer(with: numbers.last)
@@ -257,7 +260,7 @@ extension CalculatingPresenter {
 		numbers = []
 		operators = []
 		resultInFloat = 0
-		operationIndikator = false
+		isOperationInput = false
 		view.setAskAnswer(with: "0")
 		view.cleanCases()
 	}

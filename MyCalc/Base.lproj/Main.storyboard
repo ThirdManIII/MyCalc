@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UYi-W1-SOj">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -71,7 +72,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alL-fa-vRS">
-                                        <rect key="frame" x="10.000000000000007" y="330" width="116.66666666666669" height="53"/>
+                                        <rect key="frame" x="10.000000000000007" y="393" width="116.66666666666669" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="TkW-YW-Q8y"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="kOR-Bc-mgI"/>
@@ -87,7 +88,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdt-2g-l5p">
-                                        <rect key="frame" x="136.66666666666666" y="330" width="116.66666666666666" height="53"/>
+                                        <rect key="frame" x="136.66666666666666" y="393" width="116.66666666666666" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="2">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -99,7 +100,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmj-cI-804">
-                                        <rect key="frame" x="263.33333333333331" y="330" width="116.66666666666669" height="53"/>
+                                        <rect key="frame" x="263.33333333333331" y="393" width="116.66666666666669" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="3">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -111,7 +112,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZN-r6-QHC">
-                                        <rect key="frame" x="10.000000000000007" y="393" width="116.66666666666669" height="53"/>
+                                        <rect key="frame" x="10.000000000000007" y="456" width="116.66666666666669" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="4">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -123,7 +124,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhM-3C-klZ">
-                                        <rect key="frame" x="136.66666666666666" y="393" width="116.66666666666666" height="53"/>
+                                        <rect key="frame" x="136.66666666666666" y="456" width="116.66666666666666" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="5">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -135,7 +136,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCv-3G-j2G">
-                                        <rect key="frame" x="263.33333333333331" y="393" width="116.66666666666669" height="53"/>
+                                        <rect key="frame" x="263.33333333333331" y="456" width="116.66666666666669" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="6">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -147,7 +148,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iM-pw-lkk">
-                                        <rect key="frame" x="10.000000000000007" y="456" width="116.66666666666669" height="53"/>
+                                        <rect key="frame" x="10.000000000000007" y="519" width="116.66666666666669" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="7">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -159,7 +160,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdK-wR-a7L">
-                                        <rect key="frame" x="136.66666666666666" y="456" width="116.66666666666666" height="53"/>
+                                        <rect key="frame" x="136.66666666666666" y="519" width="116.66666666666666" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="8">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -171,7 +172,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3f-b0-Hv8">
-                                        <rect key="frame" x="263.33333333333331" y="456" width="116.66666666666669" height="53"/>
+                                        <rect key="frame" x="263.33333333333331" y="519" width="116.66666666666669" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="9">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -183,7 +184,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg7-WE-bal">
-                                        <rect key="frame" x="10.000000000000007" y="519" width="116.66666666666669" height="53"/>
+                                        <rect key="frame" x="10.000000000000007" y="582" width="116.66666666666669" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title=".">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -195,7 +196,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VW-Zr-xHG">
-                                        <rect key="frame" x="136.66666666666666" y="519" width="116.66666666666666" height="53"/>
+                                        <rect key="frame" x="136.66666666666666" y="582" width="116.66666666666666" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="0">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -207,7 +208,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsn-3b-xyq">
-                                        <rect key="frame" x="263.33333333333331" y="519" width="116.66666666666669" height="53"/>
+                                        <rect key="frame" x="263.33333333333331" y="582" width="116.66666666666669" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray">
                                             <imageReference key="image" image="delete.left.fill" catalog="system" symbolScale="large"/>
@@ -219,7 +220,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8as-eo-Zia">
-                                        <rect key="frame" x="10" y="582" width="370" height="53"/>
+                                        <rect key="frame" x="10" y="645" width="370" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="=">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -240,6 +241,18 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="plusButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgf-Uf-7sl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayL-zl-1TL">
+                                        <rect key="frame" x="10" y="330" width="180" height="53"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="(">
+                                            <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="leftBracketButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vs1-sG-TRv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87s-9J-YYD">
@@ -279,7 +292,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjQ-rK-X9B">
-                                        <rect key="frame" x="95" y="645" width="200" height="31"/>
+                                        <rect key="frame" x="95" y="708" width="200" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="BlP-g6-csk"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="IjD-rp-ULO"/>
@@ -292,12 +305,24 @@
                                             <action selector="openSVCButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SvN-6C-zs1"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDx-YT-QKo">
+                                        <rect key="frame" x="200" y="330" width="180" height="53"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title=")">
+                                            <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rightBracketButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n59-HT-pRd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="plu-1z-FGw"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="arh-4A-Tzy" firstAttribute="top" secondItem="plu-1z-FGw" secondAttribute="top" constant="10" id="0lT-Qo-1dz"/>
-                                    <constraint firstItem="alL-fa-vRS" firstAttribute="top" secondItem="gNz-R2-Qd3" secondAttribute="bottom" constant="10" id="26j-fE-fka"/>
+                                    <constraint firstItem="alL-fa-vRS" firstAttribute="top" secondItem="ayL-zl-1TL" secondAttribute="bottom" constant="10" id="26j-fE-fka"/>
                                     <constraint firstItem="SPR-Sk-7wa" firstAttribute="width" secondItem="DjM-hK-IUy" secondAttribute="width" id="2Jc-6F-er0"/>
                                     <constraint firstItem="alL-fa-vRS" firstAttribute="leading" secondItem="f5I-Bw-ij7" secondAttribute="leading" constant="10" id="2VX-29-7O1"/>
                                     <constraint firstItem="fCv-3G-j2G" firstAttribute="top" secondItem="AhM-3C-klZ" secondAttribute="top" id="2kF-SL-wyQ"/>
@@ -305,19 +330,25 @@
                                     <constraint firstItem="DjM-hK-IUy" firstAttribute="height" secondItem="87s-9J-YYD" secondAttribute="height" id="4dJ-Nu-oOn"/>
                                     <constraint firstItem="0iM-pw-lkk" firstAttribute="top" secondItem="pZN-r6-QHC" secondAttribute="bottom" constant="10" id="4f5-Cb-1q0"/>
                                     <constraint firstItem="DjM-hK-IUy" firstAttribute="leading" secondItem="87s-9J-YYD" secondAttribute="trailing" constant="10" id="4tr-96-8P9"/>
+                                    <constraint firstItem="wDx-YT-QKo" firstAttribute="width" secondItem="ayL-zl-1TL" secondAttribute="width" id="6jl-Rp-SSj"/>
+                                    <constraint firstItem="wDx-YT-QKo" firstAttribute="top" secondItem="ayL-zl-1TL" secondAttribute="top" id="7we-u3-AJb"/>
                                     <constraint firstItem="8as-eo-Zia" firstAttribute="leading" secondItem="Vg7-WE-bal" secondAttribute="leading" id="9Ih-Zp-WGu"/>
                                     <constraint firstItem="SPR-Sk-7wa" firstAttribute="trailing" secondItem="Kmj-cI-804" secondAttribute="trailing" id="9no-66-yns"/>
+                                    <constraint firstItem="wDx-YT-QKo" firstAttribute="height" secondItem="ayL-zl-1TL" secondAttribute="height" id="AUg-qd-9e0"/>
                                     <constraint firstItem="SPR-Sk-7wa" firstAttribute="height" secondItem="DjM-hK-IUy" secondAttribute="height" id="Acj-OE-AP4"/>
                                     <constraint firstItem="hdK-wR-a7L" firstAttribute="height" secondItem="0iM-pw-lkk" secondAttribute="height" id="AvZ-zG-OSB"/>
+                                    <constraint firstItem="ayL-zl-1TL" firstAttribute="leading" secondItem="plu-1z-FGw" secondAttribute="leading" constant="10" id="BGa-ZM-8G1"/>
                                     <constraint firstItem="A3f-b0-Hv8" firstAttribute="height" secondItem="hdK-wR-a7L" secondAttribute="height" id="BqL-vx-194"/>
                                     <constraint firstItem="hdK-wR-a7L" firstAttribute="leading" secondItem="0iM-pw-lkk" secondAttribute="trailing" constant="10" id="Cur-wl-h0O"/>
                                     <constraint firstItem="7VW-Zr-xHG" firstAttribute="width" secondItem="Vg7-WE-bal" secondAttribute="width" id="E7m-Fy-Dgi"/>
                                     <constraint firstItem="Vg7-WE-bal" firstAttribute="height" secondItem="0iM-pw-lkk" secondAttribute="height" id="EoA-xp-idz"/>
                                     <constraint firstItem="A3f-b0-Hv8" firstAttribute="top" secondItem="hdK-wR-a7L" secondAttribute="top" id="F0G-ax-hkO"/>
+                                    <constraint firstItem="wDx-YT-QKo" firstAttribute="leading" secondItem="ayL-zl-1TL" secondAttribute="trailing" constant="10" id="FLF-lT-ipQ"/>
                                     <constraint firstItem="fCv-3G-j2G" firstAttribute="width" secondItem="AhM-3C-klZ" secondAttribute="width" id="HHS-ST-R8p"/>
                                     <constraint firstItem="7VW-Zr-xHG" firstAttribute="leading" secondItem="Vg7-WE-bal" secondAttribute="trailing" constant="10" id="IcA-Rp-UwQ"/>
                                     <constraint firstItem="Kmj-cI-804" firstAttribute="height" secondItem="jdt-2g-l5p" secondAttribute="height" id="JD1-Wa-yIw"/>
                                     <constraint firstItem="SPR-Sk-7wa" firstAttribute="top" secondItem="DjM-hK-IUy" secondAttribute="top" id="K7m-EK-pR1"/>
+                                    <constraint firstItem="ayL-zl-1TL" firstAttribute="height" secondItem="gNz-R2-Qd3" secondAttribute="height" id="KFh-fK-C5X"/>
                                     <constraint firstItem="87s-9J-YYD" firstAttribute="leading" secondItem="gNz-R2-Qd3" secondAttribute="trailing" constant="10" id="KvD-uD-dzG"/>
                                     <constraint firstItem="AhM-3C-klZ" firstAttribute="height" secondItem="pZN-r6-QHC" secondAttribute="height" id="LC5-W3-CwP"/>
                                     <constraint firstItem="DjM-hK-IUy" firstAttribute="width" secondItem="87s-9J-YYD" secondAttribute="width" id="Lfd-BU-Q2f"/>
@@ -335,6 +366,7 @@
                                     <constraint firstItem="pZN-r6-QHC" firstAttribute="top" secondItem="alL-fa-vRS" secondAttribute="bottom" constant="10" id="aoP-Vn-Iwu"/>
                                     <constraint firstItem="87s-9J-YYD" firstAttribute="top" secondItem="gNz-R2-Qd3" secondAttribute="top" id="bMv-fO-5Jk"/>
                                     <constraint firstItem="87s-9J-YYD" firstAttribute="width" secondItem="gNz-R2-Qd3" secondAttribute="width" id="bgf-5u-fXm"/>
+                                    <constraint firstItem="ayL-zl-1TL" firstAttribute="top" secondItem="gNz-R2-Qd3" secondAttribute="bottom" constant="10" id="ccK-bH-aoa"/>
                                     <constraint firstItem="gNz-R2-Qd3" firstAttribute="top" secondItem="IQ9-FO-aMw" secondAttribute="bottom" constant="10" id="cni-Ge-1fA"/>
                                     <constraint firstItem="hdK-wR-a7L" firstAttribute="width" secondItem="0iM-pw-lkk" secondAttribute="width" id="cyJ-S3-tVe"/>
                                     <constraint firstItem="AhM-3C-klZ" firstAttribute="width" secondItem="pZN-r6-QHC" secondAttribute="width" id="dbz-sO-Kr0"/>
@@ -350,6 +382,7 @@
                                     <constraint firstItem="Bsn-3b-xyq" firstAttribute="height" secondItem="7VW-Zr-xHG" secondAttribute="height" id="mNG-1y-PUo"/>
                                     <constraint firstItem="0iM-pw-lkk" firstAttribute="leading" secondItem="pZN-r6-QHC" secondAttribute="leading" id="pMl-J5-WBA"/>
                                     <constraint firstItem="Kmj-cI-804" firstAttribute="width" secondItem="jdt-2g-l5p" secondAttribute="width" id="pR4-Iy-PGs"/>
+                                    <constraint firstItem="plu-1z-FGw" firstAttribute="trailing" secondItem="wDx-YT-QKo" secondAttribute="trailing" constant="10" id="pdo-5h-NRm"/>
                                     <constraint firstItem="YjQ-rK-X9B" firstAttribute="top" secondItem="8as-eo-Zia" secondAttribute="bottom" priority="251" constant="10" id="pxn-bN-i5U"/>
                                     <constraint firstItem="7VW-Zr-xHG" firstAttribute="top" secondItem="Vg7-WE-bal" secondAttribute="top" id="r2v-su-qAQ"/>
                                     <constraint firstItem="0iM-pw-lkk" firstAttribute="height" secondItem="pZN-r6-QHC" secondAttribute="height" id="r4e-8j-tgp"/>
@@ -403,12 +436,14 @@
                         <outlet property="equalButton" destination="8as-eo-Zia" id="L5R-6h-sRV"/>
                         <outlet property="gradientView" destination="7Pc-CZ-fZM" id="w4i-wJ-vi1"/>
                         <outlet property="holder" destination="f5I-Bw-ij7" id="UTK-Ae-41z"/>
+                        <outlet property="leftBracketButton" destination="ayL-zl-1TL" id="tEh-u7-8nU"/>
                         <outlet property="minusButton" destination="87s-9J-YYD" id="Qua-dq-PES"/>
                         <outlet property="multiplButton" destination="DjM-hK-IUy" id="AN4-bl-SE6"/>
                         <outlet property="openSecondViewButton" destination="YjQ-rK-X9B" id="blT-7A-AcP"/>
                         <outlet property="plusButton" destination="gNz-R2-Qd3" id="2Md-Ho-nEd"/>
                         <outlet property="punktButton" destination="Vg7-WE-bal" id="6LK-12-esh"/>
                         <outlet property="resultsStackView" destination="UGX-8d-SuW" id="oRM-rw-Wwn"/>
+                        <outlet property="rightBracketButton" destination="wDx-YT-QKo" id="RtD-vn-Dn9"/>
                         <outlet property="view" destination="f5I-Bw-ij7" id="T85-eN-f0H"/>
                     </connections>
                 </viewController>

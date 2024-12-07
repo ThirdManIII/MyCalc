@@ -33,7 +33,9 @@ final class CalculatingViewController: UIViewController {
 	@IBOutlet private var multiplButton: UIButton!
 	@IBOutlet private var divideButton: UIButton!
 	@IBOutlet private var openSecondViewButton: UIButton!
-
+	@IBOutlet private var leftBracketButton: UIButton!
+	@IBOutlet var rightBracketButton: UIButton!
+	
 	private enum Constants {
 		static let cornerRadius: CGFloat = 20.0
 		static let prevResultFontSize: CGFloat = 25.0
@@ -153,6 +155,10 @@ final class CalculatingViewController: UIViewController {
 		}
 		newView.setPreviousCases(cases: previousCasesLabels)
 		self.navigationController?.pushViewController(newView, animated: true)
+	}
+	@IBAction func leftBracketButtonAction(_ sender: UIButton) {
+	}
+	@IBAction func rightBracketButtonAction(_ sender: UIButton) {
 	}
 }
 
